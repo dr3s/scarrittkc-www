@@ -11,9 +11,14 @@ class MainHandler(webapp.RequestHandler):
     if q is None:
       q = 'index.html'
 
-    path = os.path.join (os.path.dirname (__file__) + "/publish/", q)
+    path = os.path.join (os.path.dirname (__file__) + "/templates/", "main.html")
+    content = os.path.join (os.path.dirname (__file__) + "/publish/", q)
     self.response.headers ['Content-Type'] = 'text/html'
-    self.response.out.write (template.render (path, {}))
+    ctx = {
+            'content': content,
+        }
+
+    self.response.out.write (template.render (path, ctx))
 
 def main ():
   application = webapp.WSGIApplication ([('/(.*html)?', MainHandler)], debug=True)
