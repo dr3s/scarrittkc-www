@@ -4,77 +4,14 @@
 
   <body>
   
-		
-    <div class="navbar navbar-fixed-top">
-		  <div class="navbar-inner">
-			<div class="container-fluid">
-			  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </a>
-			  <a class="brand" href="#">Scarritt Renaissance Neighborhood Association</a>
-			  <div class="btn-group pull-right">
-				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-				  <i class="icon-user"></i> Username
-				  <span class="caret"></span>
-				</a>
-				<ul class="dropdown-menu">
-				  <li><a href="#">Profile</a></li>
-				  <li class="divider"></li>
-				  <li><a href="#">Sign Out</a></li>
-				</ul>
-			  </div>
-			  <div class="nav-collapse">
-				<ul class="nav">
-				  <li class="active"><a href="#">Home</a></li>
-				  <li><a href="#about">About Us</a></li>
-				  <li><a href="#history">The Neighborhood</a></li>
-				  <li><a href="#resources">Resources</a></li>
-				  <li><a href="#events">Events</a></li>
-				</ul>
-			  </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+		{% include "nav-top.html" %}
+    
 
     <div class="container-fluid">
     	
       <div class="row-fluid">
         <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Home</li>
-              <li class="active"><a href="#">SRNA</a></li>
-              <li><a href="#">Mission</a></li>
-              <li class="nav-header">Neighborhood Association</li>
-              <li><a href="#">Boundaries</a></li>
-              <li><a href="#">Political Representation</a></li>
-              <li><a href="#">General Council </a></li>
-              <li><a href="#">Committees</a></li>
-              <li><a href="#">Membership</a></li>
-              <li><a href="#">Pay Dues</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Forums</a></li>
-              <li class="nav-header">The Neighborhood</li>
-              <li><a href="#">Rich History</a></li>
-              <li><a href="#">Kessler Park</a></li>
-              <li><a href="#">Kansas City Museum</a></li>
-              <li><a href="#">Gladstone Blvd</a></li>
-              <li><a href="#">Historic Homes</a></li>
-              <li><a href="#">Affordability</a></li>
-              <li><a href="#">Public Art</a></li>
-              <li><a href="#">Online Walking Tour of Neighborhood – with pictures</a></li>
-              <li class="nav-header">Resources</li>
-              <li><a href="#">Home Ownership Incentives</a></li>
-              <li><a href="#">Dining and Shopping</a></li>
-              <li><a href="#">School Options</a></li>
-              <li class="nav-header">Events</li>
-              <li><a href="#">Halloween</a></li>
-              <li><a href="#">Homes Tour</a></li>
-              <li><a href="#">Welcome Wagon</a></li>
-            </ul>
-          </div><!--/.well -->
+          	{% include "nav-side.html" %}
         </div><!--/span-->
         <div class="span9"> <!-- Main DIV -->
 				{% include content %}
@@ -93,19 +30,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
+    	{% include "scripts.html" %}
 
   </body>
 </html>
