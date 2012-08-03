@@ -16,6 +16,7 @@ class MainHandler(webapp.RequestHandler):
     self.response.headers ['Content-Type'] = 'text/html'
     ctx = {
             'content': content,
+            'templateDir': os.path.dirname (__file__) + "/templates"
         }
 
     self.response.out.write (template.render (path, ctx))
