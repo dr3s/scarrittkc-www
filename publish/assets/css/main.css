@@ -5,6 +5,12 @@ body {
 
 h2 {
 	color: white;
+    border-top:250px solid transparent;
+    margin-top:-250px;
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding;
+    background-clip:padding-box;
+
 }
 
 a {
@@ -19,13 +25,13 @@ a:hover, a:visited {
   background: transparent;
 }
 
-.navbar .container-fluid {
+header .container-fluid {
 	padding-left: 0;
 	padding-right: 0;
 }
 
 #header .brand {
- padding: 0 0 0 25px;
+ padding: 0 0 0 48px;
 }
 
 #header {
@@ -55,3 +61,5 @@ a:hover, a:visited {
 	background-color: #590000;
 	color: #f9edb2;
 }
+
+
