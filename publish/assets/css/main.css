@@ -6,3 +6,17 @@ body {
 .logo {
   background: transparent;
 }
+
+.navbar .container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#header .brand {
+ padding: 0;
+}
+
+#header {
+  background-image: url('/assets/img/scarritt/header-repeat.jpg');
+  background-repeat: repeat-x;
+}
