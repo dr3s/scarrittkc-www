@@ -3,6 +3,18 @@ body {
   background-image: url("/assets/img/scarritt/bg.jpg");
 }
 
+h2 {
+	color: white;
+}
+
+a {
+	color: #fcde92;
+}
+
+a:hover, a:visited {
+	color: #ebc566;
+}
+
 .logo {
   background: transparent;
 }
@@ -13,10 +25,33 @@ body {
 }
 
 #header .brand {
- padding: 0;
+ padding: 0 0 0 25px;
 }
 
 #header {
   background-image: url('/assets/img/scarritt/header-repeat.jpg');
   background-repeat: repeat-x;
+}
+
+#minorNav {
+	background-color: #f9edb2;
+}
+
+.nav .nav-header {
+	color: #590000;
+}
+
+
+.nav > li > a:hover {
+	background-color: #fcde92;
+	color: #3b0000;
+}
+
+.nav > li > a {
+	color: #590000;
+}
+
+.nav > li.active > a {
+	background-color: #590000;
+	color: #f9edb2;
 }
