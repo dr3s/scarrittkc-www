@@ -28,6 +28,7 @@ a:hover, a:visited {
 header .container-fluid {
 	padding-left: 0;
 	padding-right: 0;
+	padding-bottom: 20px;
 }
 
 #header .brand {
@@ -61,5 +62,7 @@ header .container-fluid {
 	background-color: #590000;
 	color: #f9edb2;
 }
+
+
 
 
