@@ -8,11 +8,6 @@ h1 {
 
 h2 {
 	color: white;
-    border-top:250px solid transparent;
-    margin-top:-250px;
-    -webkit-background-clip:padding-box;
-    -moz-background-clip:padding;
-    background-clip:padding-box;
 
 }
 
