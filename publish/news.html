@@ -1,0 +1,106 @@
+
+
+
+<div class="row-fluid">
+	
+		<div class="span6">
+<section id='announce'>  
+	 <div class="row-fluid">
+		<div class="span12">
+	  <h2>Announcements</h2>
+		
+		<iframe id="announce_embed"
+		 src="javascript:void(0)"
+		 scrolling="no"
+		 frameborder="0"
+		 width="95%"
+		 height="500px">
+		</iframe>
+		
+		<script type="text/javascript">
+		 document.getElementById("announce_embed").src =
+		  "https://groups.google.com/forum/embed/?place=forum/scarrittkc-announce" +
+		  "&showpopout=true" +
+		  "&showtabs=true" ;
+		</script>
+		
+		</div><!--/span-->
+	</div><!--/row-->
+</section> 
+
+</div><!--/span-->
+		<div class="span6">
+
+<section id='forums'>  
+	 <div class="row-fluid">
+		<div class="span12">
+	  <h2>Forums</h2>
+		
+		<iframe id="forum_embed"
+		 src="javascript:void(0)"
+		 scrolling="no"
+		 frameborder="0"
+		 width="95%"
+		 height="500px">
+		</iframe>
+		
+		<script type="text/javascript">
+		 document.getElementById("forum_embed").src =
+		  "https://groups.google.com/forum/embed/?place=forum/scarrittkc-forum" +
+		  "&showpopout=true" +
+		  "&showtabs=true" ;
+		</script>
+		
+		</div><!--/span-->
+	</div><!--/row-->
+</section> 
+
+</div><!--/span-->
+</div><!--/row-->
+
+<section id='fbFeed'>   
+	<div class="row-fluid">
+	
+		<div class="span12">
+		   <h2>Facebook Activity</h2> 
+		</div><!--/span-->
+	</div><!--/row-->     
+	<div  class="row-fluid">
+		<div id="fbLoad">Loading...</div>
+	</div><!--/row-->
+</section>
+
+<script type="text/javascript">
+
+google.load("feeds", "1");
+
+function initialize() {
+  var feed = new google.feeds.Feed("https://www.facebook.com/feeds/page.php?format=atom10&id=179118175460112");
+  feed.setNumEntries(24);
+  feed.load(function(result) {
+	if (!result.error) {
+	  var container = $("#fbFeed");
+	  var rowDiv = $("<div class='row-fluid'></div>");
+	  for (var i = 0; i < result.feed.entries.length ; i++) {
+		var entry = result.feed.entries[i];
+		var spanDiv = $("<div class='fb-entry span6'></div>");
+		spanDiv.html(entry.content);
+		rowDiv.append(spanDiv)
+		if ((i + 1) % 2 == 0) {
+	  		container.append(rowDiv);
+	  		rowDiv = $("<div  class='row-fluid'></div>");
+	  	}
+	  	
+	  }
+	  
+	  container.append(rowDiv);
+	  
+	  $("#fbLoad").empty();
+	}
+  });
+}
+google.setOnLoadCallback(initialize);
+
+</script>	        
+             
+     

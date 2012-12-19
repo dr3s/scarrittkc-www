@@ -61,6 +61,70 @@ header .container-fluid {
 	color: #f9edb2;
 }
 
+.span6 {
+	-webkit-border-image: none;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 1px 0px inset;
+	background-color: #F9EDB2;
+	border-bottom-color: rgba(0, 0, 0, 0.0470588);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: rgba(0, 0, 0, 0.0470588);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgba(0, 0, 0, 0.0470588);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgba(0, 0, 0, 0.0470588);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 1px 0px inset;
+	color: black;
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 5px;
+	margin-bottom: 10px;
+	
+}
 
+.span6 h2 {
+	color: #590000;
+}
+	
+.span6	a {
+	color: #08C;
+	text-decoration: none;
+}
+
+iframe {
+	-webkit-border-image: none;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 1px 0px inset;
+	background-color: white;
+	border-bottom-color: rgba(0, 0, 0, 0.0470588);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: rgba(0, 0, 0, 0.0470588);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgba(0, 0, 0, 0.0470588);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgba(0, 0, 0, 0.0470588);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 1px 0px inset;
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 5px;
+	margin-bottom: 5px;
+	
+}
 
 
