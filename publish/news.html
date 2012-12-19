@@ -62,7 +62,7 @@
 	<div class="row-fluid">
 	
 		<div class="span12">
-		   <h2>Facebook Activity</h2> 
+		   <h2><a href="https://www.facebook.com/pages/Scarritt-Neighborhood-Association/179118175460112">Facebook Activity<a/></h2> 
 		</div><!--/span-->
 	</div><!--/row-->     
 	<div  class="row-fluid">
@@ -84,7 +84,16 @@ function initialize() {
 	  for (var i = 0; i < result.feed.entries.length ; i++) {
 		var entry = result.feed.entries[i];
 		var spanDiv = $("<div class='fb-entry span6'></div>");
-		spanDiv.html(entry.content);
+		
+		var headerP = $("<p class='fb-entry-header'></p>");
+		headerP.html("<h4><a href='" + entry.link + "'>" + entry.publishedDate + ": " 
+					+ entry.title + "</a></h4>");
+		spanDiv.append(headerP)
+		
+		var contentP = $("<p class='fb-entry-content'></p>");
+		contentP.html(entry.content);
+		spanDiv.append(contentP)
+		
 		rowDiv.append(spanDiv)
 		if ((i + 1) % 2 == 0) {
 	  		container.append(rowDiv);
